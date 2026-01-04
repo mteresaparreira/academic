@@ -344,3 +344,36 @@ footer {
 .section ul li {
     margin-bottom: 0.5rem;
 }
+
+/* PDF Container Styles */
+.pdf-container {
+    margin: 2rem 0;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.pdf-container embed {
+    display: block;
+    border: none;
+}
+
+.pdf-fallback {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--light-gray);
+}
+
+.pdf-fallback a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--hover-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.pdf-fallback a:hover {
+    text-decoration: underline;
+}
