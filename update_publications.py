@@ -43,7 +43,7 @@ def fetch_publications(scholar_id):
         # Sort by year (most recent first)
         publications.sort(key=lambda x: int(x['year']) if x['year'] != 'n.d.' else 0, reverse=True)
         
-        return publications
+        return publications[:10]
     
     except Exception as e:
         print(f"Error fetching publications: {e}")
