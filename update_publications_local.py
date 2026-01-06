@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-Local script to update academia.html with publications from Google Scholar
-Run this on your laptop - it will update your local academia.html file
+Local script to update academia.html and automatically push to GitHub
+Just run this script and it does everything!
 """
 
 import re
+import subprocess
 from scholarly import scholarly
 from datetime import datetime
 
@@ -13,6 +14,23 @@ GOOGLE_SCHOLAR_ID = "kWYDz2UAAAAJ"  # Replace with your Google Scholar ID
 HTML_FILE = "academia.html"
 SECTION_MARKER_START = "<!-- PUBLICATIONS_START -->"
 SECTION_MARKER_END = "<!-- PUBLICATIONS_END -->"
+
+def run_git_command(command, description):
+    """Run a git command and handle errors"""
+    try:
+        result = subprocess.run(
+            command,
+            shell=True,
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        print(f"✅ {description}")
+        return True
+    except subprocess.CalledProcessError as e:
+        print(f"❌ {description} failed:")
+        print(f"   {e.stderr}")
+        return False
 
 def fetch_publications(scholar_id):
     """Fetch publications from Google Scholar"""
@@ -44,14 +62,28 @@ def fetch_publications(scholar_id):
         
         print()  # New line after progress
         
-        # Sort by year (most recent first)
-        publications.sort(key=lambda x: int(x['year']) if x['year'] != 'n.d.' else 0, reverse=True)
+        # Sort by year (most recent first) - handle various year formats
+        def get_sort_year(pub):
+            year = pub['year']
+            if year == 'n.d.' or not year:
+                return 0
+            # Try to extract just the 4-digit year if there's extra text
+            import re
+            year_match = re.search(r'(19|20)\d{2}', str(year))
+            if year_match:
+                return int(year_match.group(0))
+            try:
+                return int(year)
+            except:
+                return 0
+        
+        publications.sort(key=get_sort_year, reverse=True)
         
         # Return top 10
         return publications[:10]
     
     except Exception as e:
-        print(f"\nError fetching publications: {e}")
+        print(f"\n❌ Error fetching publications: {e}")
         print("\nTroubleshooting:")
         print("- Make sure your Google Scholar ID is correct")
         print("- Try running again in a few minutes")
@@ -74,7 +106,14 @@ def format_publication_html(pub):
         html += f'            <h3>{pub["title"]}</h3>\n'
     
     html += f'            <p class="authors">{authors}</p>\n'
-    html += f'            <p class="venue-info">{pub["venue"]}, {pub["year"]}'
+    html += f'            <p class="venue-info">'
+    
+    # Only show venue if it exists and is not "Unpublished"
+    venue = pub['venue']
+    if venue and venue != 'Unpublished' and venue.strip():
+        html += f'{venue}, '
+    
+    html += f'{pub["year"]}'
     
     if pub['citations'] > 0:
         html += f' • <span class="citations">{pub["citations"]} citations</span>'
@@ -132,10 +171,48 @@ def update_html_file(html_file, new_content):
         print(f"\n❌ ERROR: Failed to update HTML file: {e}")
         return False
 
+def push_to_github():
+    """Automatically commit and push changes to GitHub"""
+    print("\n" + "=" * 60)
+    print("Pushing to GitHub...")
+    print("=" * 60)
+    print()
+    
+    # Check if there are changes
+    result = subprocess.run(
+        "git diff --quiet academia.html",
+        shell=True,
+        capture_output=True
+    )
+    
+    if result.returncode == 0:
+        print("ℹ️  No changes detected - publications are already up to date!")
+        return True
+    
+    # Stage the file
+    if not run_git_command("git add academia.html", "Staged academia.html"):
+        return False
+    
+    # Commit
+    commit_message = f"Update publications - {datetime.now().strftime('%Y-%m-%d')}"
+    if not run_git_command(f'git commit -m "{commit_message}"', "Created commit"):
+        return False
+    
+    # Push
+    if not run_git_command("git push", "Pushed to GitHub"):
+        print("\n⚠️  Push failed. This might be because:")
+        print("   1. You need to authenticate (see setup instructions)")
+        print("   2. You don't have write access to the repo")
+        print("   3. Your branch is behind the remote")
+        print("\nYou can manually push with: git push")
+        return False
+    
+    return True
+
 def main():
     """Main function"""
     print("=" * 60)
-    print("Google Scholar Publications Updater (Local Version)")
+    print("Google Scholar Publications Updater + Auto-Push")
     print("=" * 60)
     print()
     
@@ -159,19 +236,26 @@ def main():
     new_html = generate_publications_html(publications)
     
     # Update HTML file
-    if update_html_file(HTML_FILE, new_html):
+    if not update_html_file(HTML_FILE, new_html):
+        return 1
+    
+    # Push to GitHub
+    if push_to_github():
         print("\n" + "=" * 60)
-        print("✅ SUCCESS! Your academia.html has been updated.")
+        print("🎉 SUCCESS! Your website is updated!")
         print("=" * 60)
-        print("\nNext steps:")
-        print("1. Review the changes in academia.html")
-        print("2. Commit and push to GitHub:")
-        print("   git add academia.html")
-        print("   git commit -m 'Update publications'")
-        print("   git push")
+        print("\nYour changes are live at:")
+        print("https://mteresaparreira.github.io/academic/")
+        print("\nGitHub Pages may take 1-2 minutes to rebuild.")
         print()
         return 0
     else:
+        print("\n" + "=" * 60)
+        print("⚠️  File updated but push failed")
+        print("=" * 60)
+        print("\nYou can manually push with:")
+        print("  git push")
+        print()
         return 1
 
 if __name__ == "__main__":
