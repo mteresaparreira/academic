@@ -9,7 +9,7 @@ from scholarly import scholarly
 from datetime import datetime
 
 # Configuration
-GOOGLE_SCHOLAR_ID = "YOUR_SCHOLAR_ID"  # Replace with your Google Scholar ID
+GOOGLE_SCHOLAR_ID = "kWYDz2UAAAAJ"  # Replace with your Google Scholar ID
 HTML_FILE = "academia.html"
 SECTION_MARKER_START = "<!-- PUBLICATIONS_START -->"
 SECTION_MARKER_END = "<!-- PUBLICATIONS_END -->"
