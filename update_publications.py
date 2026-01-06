@@ -23,6 +23,15 @@ def fetch_publications(scholar_id):
     print(f"Fetching publications for Scholar ID: {scholar_id}")
     
     try:
+        # Set up proxy to avoid being blocked
+        from scholarly import ProxyGenerator
+        
+        pg = ProxyGenerator()
+        success = pg.FreeProxies()
+        scholarly.use_proxy(pg)
+        
+        print("Using proxy to fetch data...")
+        
         # Search for author
         search_query = scholarly.search_author_id(scholar_id)
         author = scholarly.fill(search_query)

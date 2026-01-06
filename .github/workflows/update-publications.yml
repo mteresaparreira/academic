@@ -21,7 +21,7 @@ jobs:
         
     - name: Install dependencies
       run: |
-        pip install scholarly
+        pip install scholarly free-proxy stem
         
     - name: Update publications
       env:
