@@ -1,15 +1,19 @@
 ---
 title:          '"Bad Idea, Right?" Exploring Anticipatory Human Reactions for Outcome Prediction in HRI'
-date:           2024-07-01 00:01:00 -0500
+date:           2024-08-27 00:01:00 -0500
 selected:       true
-pub:            'IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)'
+pub:            '2024 33rd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)'
 pub_date:       "2024"
+# abstract:     >-
+#   One or two sentences shown under the title.
+# cover:        /assets/images/covers/<image>.jpg
+# pub_last:     ' <span class="badge badge-pill badge-publication badge-success">Best Paper</span>'
 authors:
   - Maria Teresa Parreira
-  - S. G. Lingaraju
-  - Adolfo G. Ramirez-Aristizabal
-  - Alexandra W. Bremers
-  - M. Saha
+  - Sukruth Gowdru Lingaraju
+  - Adolfo Ramirez-Aristizabal
+  - Alexandra Bremers
+  - Manaswi Saha
   - Michael Kuniavsky
   - Wendy Ju
 links:

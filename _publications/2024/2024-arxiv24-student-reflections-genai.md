@@ -1,0 +1,17 @@
+---
+title:          'Student Reflections on Self-Initiated GenAI Use in HCI Education'
+date:           2024-05-02 00:01:00 -0500
+selected:       false
+pub:            'arXiv preprint arXiv:2405.01467'
+pub_date:       "2024"
+# abstract:     >-
+#   One or two sentences shown under the title.
+# cover:        /assets/images/covers/<image>.jpg
+# pub_last:     ' <span class="badge badge-pill badge-publication badge-success">Best Paper</span>'
+authors:
+  - Hauke Sandhaus
+  - Maria Teresa Parreira
+  - Wendy Ju
+links:
+  arXiv: https://arxiv.org/abs/2405.01467
+---

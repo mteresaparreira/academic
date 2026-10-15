@@ -1,10 +1,14 @@
 ---
 title:          'Design Implications for Effective Robot Gaze Behaviors in Multiparty Interactions'
-date:           2022-03-08 00:01:00 -0500
+date:           2022-03-09 00:01:00 -0500
 selected:       true
-pub:            'Proceedings of the 2022 ACM/IEEE International Conference on Human-Robot Interaction (HRI ''22)'
+pub:            '2022 17th ACM/IEEE International Conference on Human-Robot Interaction (HRI)'
 pub_post:       ', pp. 976–980'
 pub_date:       "2022"
+# abstract:     >-
+#   One or two sentences shown under the title.
+# cover:        /assets/images/covers/<image>.jpg
+# pub_last:     ' <span class="badge badge-pill badge-publication badge-success">Best Paper</span>'
 authors:
   - Maria Teresa Parreira
   - Sarah Gillet
