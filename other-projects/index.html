@@ -1,0 +1,38 @@
+---
+layout: default
+title: Other Projects
+navbar_title: Other Projects
+permalink: /other-projects/
+---
+
+<div class="row">
+    <div class="col-12 col-lg-10 mx-auto">
+        <h1 class="pt-4">What else takes up my time?</h1>
+        <p class="lead">A list of projects I am equally as passionate about</p>
+
+        <div class="row">
+            {% assign projects = "reboot|Reboot (Sustainability)|/assets/images/projects/reboot.jpg,bora|Bora (Mentorship Programme)|/assets/images/projects/bora.png,published-thoughts|Published thoughts|/assets/images/projects/great-wall.jpg" | split: "," %}
+            {% for p in projects %}
+            {% assign f = p | split: "|" %}
+            <div class="col-md-4 mb-3">
+                <a href="{{ '/other-projects/' | append: f[0] | append: '/' | relative_url }}" class="card border-0 shadow-sm bg-white h-100 text-body">
+                    <div class="rounded-xl-top" style="height: 160px; background: url('{{ f[2] | relative_url }}') center / cover;"></div>
+                    <div class="card-body"><h5 class="card-title mb-0">{{ f[1] }}</h5></div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+
+        <h2 class="pt-4">Log of interesting challenges</h2>
+        <div class="my-3 bg-white shadow-sm rounded-xl p-4">
+            <ul class="list-unstyled mb-0">
+                {% for item in site.data.challenges %}
+                <li class="mb-3">
+                    <span class="text-muted mr-2">{{ item.date }}</span> {{ item.text }}
+                    {% if item.links %}<div class="small text-muted">{{ item.links }}</div>{% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,94 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maria Teresa Parreira - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="academia.html">Academia</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Other projects</a>
-                    <div class="dropdown-content">
-                        <a href="bora.html">Bora</a>
-                        <a href="reboot.html">Reboot</a>
-                        <a href="thoughts.html">Published Thoughts</a>
-                    </div>
-                </li>
-                <li><a href="cv.html">CV</a></li>
-            </ul>
-        </div>
-    </nav>
+---
+layout: default
+title : Homepage
+navbar_title: Home
+---
 
-    <main class="container">
-        <section class="hero">
-            <div class="profile-header">
-                <h1>Maria Teresa Parreira</h1>
-                <p class="subtitle">PhD Candidate at Cornell University</p>
-            </div>
-        </section>
+<div class="row">
+    <div class="col-lg-3 col-md-4">
+        {% include widgets/profile_card_mini.html %}
+    </div>
+    <div class="col-lg-9 col-md-8">
 
-        <section class="content-section">
-            <div class="content-wrapper">
-                <div class="text-content">
-                    <p class="bio">
-                        I investigate how humans and AI systems communicate and repair interaction breakdowns, 
-                        combining multimodal machine learning with human-in-the-loop methods to improve 
-                        social competence in human-AI interaction.
-                    </p>
+        {% include widgets/profile_card_bio_only.html %}
 
-                    
+        <!-- Debugging widget: warns if `baseurl` in _config.yml doesn't match where the site is served -->
+        {% include widgets/debug_url.html %}
 
-                    <div class="contact-links">
-                        <h3>Contact & Links</h3>
-                        <ul class="social-links">
-                            <li>
-                                <a href="mailto:mb2554@cornell.edu">
-                                    <i class="fas fa-envelope"></i> Email
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/mariateresaparreira" target="_blank">
-                                    <i class="fab fa-linkedin"></i> LinkedIn
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/mariateresaparreira" target="_blank">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://scholar.google.com/citations?user=kWYDz2UAAAAJ" target="_blank">
-                                    <i class="fas fa-graduation-cap"></i> Google Scholar
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+        {% if site.data.display.homepage.show_experience %}
+            {% include widgets/experience_card.html %}
+        {% endif %}
 
-                    <blockquote class="quote">
-                        "Understanding our sociality is critical to understanding our humanity"
-                        <cite>— Breazeal, 2001</cite>
-                    </blockquote>
-                </div>
+        {% if site.data.display.homepage.show_news %}
+        {% assign count_news = site.news | size %}
+        {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+        {% endif %}
+        {% endif %}
 
-                <div class="profile-photo">
-                    <div class="photo-placeholder">
-                        <img src="docs/profile.jpg" alt="Maria Teresa Parreira" />
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Maria Teresa Parreira. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+        {% if site.data.display.homepage.show_selected_publications %}
+        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+        {%
+        include widgets/publication_card.html
+        publications=pubs
+        title='<i class="fas fa-star"></i> Selected Publications'
+        %}
+        {% endif %}
+    </div>
+</div>

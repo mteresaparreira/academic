@@ -1,0 +1,80 @@
+primary_name: "Maria Teresa Parreira"
+secondary_name: ""
+navbar_name: "Maria Teresa Parreira"
+
+positions:
+- name: PhD Candidate
+- name: Cornell University (NY, USA)
+  logo: /assets/images/badges/cornell.png
+
+
+email: "mb2554@cornell.edu"
+cv_link: /cv/
+gscholar: kWYDz2UAAAAJ
+github: mteresaparreira
+linkedin: mariateresaparreira
+# orcid: 0000-0000-0000-0000
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    By leveraging machine learning and human&#8209;in&#8209;the&#8209;loop sensing, I want to build tools that make sense
+    of social environments, for more robust, adaptable, and socially competent artificial agents.
+  </p>
+  <p>
+    See my publications, press and academic training on <a href="academia/">Academia</a>.
+    Get familiar with other projects of mine over <a href="other-projects/">Other Projects</a>.
+    My CV is (surprise) on <a href="cv/">CV</a>.
+  </p>
+  <blockquote class="blockquote mb-0 mt-4">
+    <p class="mb-0"><em>&ldquo;Understanding our sociality is critical to understanding our humanity&rdquo;</em></p>
+    <footer class="blockquote-footer">Breazeal (2001)</footer>
+  </blockquote>
+
+portrait_url: /docs/profile.jpg
+
+education:
+- name: Cornell University
+  logo: /assets/images/badges/cornell.png
+  position: >-
+    PhD, Information Science <br/>
+    Advisors: Profs. Malte Jung, Wendy Ju
+  date: Aug. 2022 - present
+- name: Instituto Superior Técnico (Lisboa, Portugal)
+  position: >-
+    Integrated MSc in Biomedical Engineering <br/>
+    Magna cum laude (19/20). Master Thesis Dissertation in collaboration with
+    Carnegie Mellon University (Pittsburgh, USA), evaluated at 20/20
+  date: 2015 - 2020
+- name: Tsinghua University (Beijing, China)
+  logo: /assets/images/badges/tsinghua.png
+  position: Exchange semester, Computer Science Department
+  date: 2018
+
+experience:
+- name: KTH Royal Institute of Technology (Stockholm, Sweden)
+  position: Research Engineer, Robotics, Perception and Learning Department
+  date: Jun. 2021 - Jul. 2022
+- name: Institute for Systems and Robotics (Lisboa, Portugal)
+  logo: /assets/images/badges/cmu.png
+  position: >-
+    Scholar, in collaboration with Dahl's Lab at Carnegie Mellon University (USA)
+  date: Jan. 2020 - Apr. 2020
+- name: Institute for Systems and Robotics (Lisboa, Portugal)
+  position: >-
+    Internship: a machine learning approach to segmentation of MRI images in cases of MS
+  date: Mar. 2019 - Jul. 2019
+- name: Institute for Systems and Robotics (Lisboa, Portugal)
+  position: "Internship: development of grasping motion for the Vizzy robot"
+  date: Dec. 2017 - Feb. 2018
+- name: Faculty of Medicine, University of Lisbon (Portugal)
+  position: Teaching Assistant in Histology
+  date: Sep. 2016 - Feb. 2017
+
+awards:
+- name: >-
+    <a href="https://tecnico.ulisboa.pt/en/news/campus-community/tecnico-alumni-win-the-ieee-outstanding-msc-thesis-award/" target="_blank">IEEE Portugal's Outstanding MSc Thesis Award</a>
+  date: 2022
+- name: >-
+    <a href="https://tecnico.ulisboa.pt/en/events/maria-de-lourdes-pintasilgo-award-ceremony-5th-edition-2020/" target="_blank">Maria de Lourdes Pintasilgo Award</a>
+  date: 2021

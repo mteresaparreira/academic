@@ -1,0 +1,79 @@
+# Lists shown on the Academia page (academia.html). Newest first.
+# `text` may contain HTML (e.g. links).
+
+talks:
+- date: 06/2023
+  text: >-
+    <a href="https://techgenez.com/elon-musk-neuralink-receives-fda-approval-to-implant-brain-chips-in-humans/" target="_blank">MIRRORLab</a> (remote) -
+    "How can we (should we) become better roboticists? A Case Study on Unintended Biases in Robot Social Behavior"
+- date: 05/2023
+  text: >-
+    <a href="https://gaips.inesc-id.pt/" target="_blank">GAIPS</a> (Lisboa) -
+    "“How Did They Come Across?” Lessons Learned from Continuous Affective Ratings"
+- date: 05/2023
+  text: >-
+    <a href="https://iti.larsys.pt/" target="_blank">ITI</a> (Lisboa) -
+    "“How Did They Come Across?” Lessons Learned from Continuous Affective Ratings"
+- date: 06/2022
+  text: >-
+    Attended <a href="https://www.summer-school.rpl.eecs.kth.se/" target="_blank">RPL Summer School</a> (Stockholm)
+
+reviews:
+- IEEE International Conference on Robotics & Automation (ICRA), 2026
+- Advanced Robotics, 2026
+- ACM CHI conference on Human Factors in Computing Systems, 2026
+- IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025
+- ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2023-26
+- Late-Breaking Reports, ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2022-25
+- Transactions on Human-Robot Interaction (THRI) 2024-25
+- International Conference on Social Robotics (ICSR) 2024
+- "01/2023 - now - PACT committee (PhDs At Cornell Tech): Co-president (1/2023-1/2024), Social Chair (1/2024-1/2026)"
+- 10/2023 - Organizing committee for the IS Retreat
+- Cognitive Systems Research, 2023
+- International Journal of Social Robotics, 2022-23
+
+code_projects:
+- name: DFL - Bundesliga Data Shootout
+  url: https://www.kaggle.com/code/madeiramml10/noise-stripping-for-soccer-event-detection
+  note: Kaggle, 2022
+- name: Feature Extraction for Cell Mechanobiology analysis
+  url: https://github.com/mteresaparreira/dynamic-feature-analysis-complete
+  note: Thesis work, 2020
+- name: EEG Pattern Mining
+  url: https://github.com/mteresaparreira/cbi_pattern_mining
+  note: Course work, 2019
+- name: EMG for Robotic Platform Control
+  url: https://github.com/mteresaparreira/emg_controlled_robot
+  note: Course work, 2019
+- name: Human Protein Atlas Image Classification
+  url: https://github.com/mteresaparreira/human-protein-atlas-classification
+  note: Kaggle, 2018
+
+press:
+- date: May/2025
+  text: >-
+    <a href="https://news.cornell.edu/stories/2025/04/robotability-score-ranks-nyc-streets-future-robot-deployment" target="_blank">Cornell Chronicle covers Robotability project</a>
+    (also featured in <a href="https://technews.acm.org/archives.cfm?fo=2025-05-may/may-05-2025.html" target="_blank">ACM Tech News</a>)
+- date: Jul/2024
+  text: >-
+    <a href="https://enb.iisd.org/events/science-day-hlpf-2024" target="_blank">Participated and intervened at HLPF's Science Day, at the UN Headquarters</a>
+- date: Jun/2024
+  text: >-
+    <a href="https://medium.com/@mikekuniavsky/applied-distributed-cognition-using-foundation-models-and-biosensing-a-research-agenda-cfa761131a29" target="_blank">A great summary of our research on "Bad Robots" with Accenture, from an old collaborator</a>
+- date: Mar/2023
+  text: >-
+    <a href="https://aeist-my.sharepoint.com/:b:/g/personal/aeist_aeist_pt/EQFh-InhRLxLv3eVWRtCAVEBJ8ClkzJ4y7N0fijHbvbI9g?e=PK7B4O" target="_blank">Master's thesis project featured in "revista Técnica"</a>, a publication journal for Instituto Superior Técnico
+- date: Feb/2022
+  text: >-
+    <a href="https://tecnico.ulisboa.pt/en/news/campus-community/tecnico-alumni-win-the-ieee-outstanding-msc-thesis-award/" target="_blank">IEEE Portugal's Outstanding MSc Thesis Award</a>
+- date: Nov/2021
+  text: >-
+    <a href="https://tecnico.ulisboa.pt/en/events/maria-de-lourdes-pintasilgo-award-ceremony-5th-edition-2020/" target="_blank">Honored with the Maria de Lourdes Pintasilgo Award</a>;
+    <a href="https://tecnico.ulisboa.pt/pt/noticias/campus-e-comunidade/helena-pereira-e-maria-teresa-parreira-sao-as-vencedoras-da-5-a-edicao-do-premio-maria-de-lourdes-pintasilgo/" target="_blank">Ceremony here (PT)</a>;
+    <a href="https://jornaleconomico.pt/noticias/tecnico-perpetua-legado-de-m-lourdes-pintasilgo-830951" target="_blank">Other Press</a>
+- date: Jun/2021
+  text: >-
+    <a href="https://phys.org/news/2021-06-international-insight-fibrosis-devastating-body.html" target="_blank">Another article about paper "A single stiffened nucleus alters cell dynamics and coherence in a monolayer"</a>
+- date: Jun/2021
+  text: >-
+    <a href="https://www.cheme.engineering.cmu.edu/news/2021/06/24-dahl-stiffened-cells.html" target="_blank">Article about paper "A single stiffened nucleus alters cell dynamics and coherence in a monolayer"</a>

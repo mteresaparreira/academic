@@ -1,48 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Maria Teresa Parreira</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="academia.html">Academia</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Other projects</a>
-                    <div class="dropdown-content">
-                        <a href="bora.html">Bora</a>
-                        <a href="reboot.html">Reboot</a>
-                        <a href="thoughts.html">Published Thoughts</a>
-                    </div>
-                </li>
-                <li><a href="cv.html" class="active">CV</a></li>
-            </ul>
-        </div>
-    </nav>
+---
+layout: default
+title: CV
+navbar_title: CV
+permalink: /cv/
+---
 
-    <main class="container">
-        <div class="page-header">
-            <h1>Curriculum Vitae</h1>
+<div class="row">
+    <div class="col-12 col-lg-10 mx-auto">
+        <h1 class="pt-4">CV</h1>
+        <p><a href="{{ '/docs/cv.pdf' | relative_url }}" target="_blank"><i class="fas fa-file-pdf"></i> Download PDF</a></p>
+        <div class="bg-white shadow-sm rounded-xl overflow-hidden">
+            <object data="{{ '/docs/cv.pdf' | relative_url }}" type="application/pdf" width="100%" style="height: 80vh; display: block;">
+                <p class="p-4 mb-0">Your browser can't show the PDF here. <a href="{{ '/docs/cv.pdf' | relative_url }}">Open the CV</a> instead.</p>
+            </object>
         </div>
-
-        <div class="pdf-container">
-            <embed src="docs/cv.pdf" type="application/pdf" width="100%" height="800px" />
-            <p class="pdf-fallback">
-                <a href="docs/cv.pdf" target="_blank">
-                    <i class="fas fa-download"></i> Download CV (PDF)
-                </a>
-            </p>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Maria Teresa Parreira. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+    </div>
+</div>

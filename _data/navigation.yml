@@ -1,0 +1,22 @@
+pages:
+# NOTE: `name` field must match the `navbar_title` field in the page's front matter to ensure the correct page is highlighted in the navbar.
+#       For example, the `navbar_title` field in `showcase.html` is "Showcase" and the `name` field here should also be "Showcase"
+- name: Home
+  url: /
+- name: Academia
+  url: /academia/
+- name: Other Projects
+  url: /other-projects/
+- name: CV
+  url: /cv/
+
+# Hidden pages: these are still built and reachable by URL, but not linked in the menu.
+# Move an entry above this comment to show it again.
+# - name: Publications
+#   url: /publications
+# - name: Blog
+#   url: /blog
+# - name: Showcase
+#   url: /showcase
+# - name: Home (Layout 2)
+#   url: /index_layout2

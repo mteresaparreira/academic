@@ -1,137 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academia - Maria Teresa Parreira</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="academia.html" class="active">Academia</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Other projects</a>
-                    <div class="dropdown-content">
-                        <a href="bora.html">Bora</a>
-                        <a href="reboot.html">Reboot</a>
-                        <a href="thoughts.html">Published Thoughts</a>
-                    </div>
-                </li>
-                <li><a href="cv.html">CV</a></li>
+---
+layout: default
+title : Academia
+navbar_title: Academia
+permalink: /academia/
+body_attr: >-
+  data-spy="scroll" data-target="#navbar-academia" data-offset="100"
+---
+
+{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+
+<div class="row">
+    <div class="col-12 col-lg-10">
+
+        <h1 class="pt-4">Education, Research, Press</h1>
+
+        <h2 class="pt-4" id="publications">Selected Publications</h2>
+        {% for year in pubs_by_year %}
+        <h5 class="pt-3 text-muted">{{ year.name }}</h5>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+            {% for item in year.items %}
+                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            {% endfor %}
+        </div>
+        {% endfor %}
+
+        <h2 class="pt-5" id="experience">Work/Research Experience &amp; Education</h2>
+        {% include widgets/experience_card.html %}
+
+        <h2 class="pt-5" id="talks">Visits/Talks/Summer Schools</h2>
+        <div class="my-3 bg-white shadow-sm rounded-xl p-4">
+            <ul class="list-unstyled mb-0">
+                {% for item in site.data.academia.talks %}
+                <li class="mb-2"><span class="text-muted mr-2">{{ item.date }}</span> {{ item.text }}</li>
+                {% endfor %}
             </ul>
         </div>
-    </nav>
 
-    <main class="container">
-        <div class="page-header">
-            <h1>Academia</h1>
+        <h2 class="pt-5" id="reviews">Reviews and Committees</h2>
+        <div class="my-3 bg-white shadow-sm rounded-xl p-4">
+            <ul class="mb-0">
+                {% for item in site.data.academia.reviews %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
         </div>
 
-        <section class="section">
-            <h2>Research Interests</h2>
-            <p>
-                Machine learning and human-in-the-loop sensing for social AI agents. Building tools that make sense of
-                social environments for more robust, adaptable, and socially competent artificial agents.
-            </p>
-        </section>
+        <h2 class="pt-5" id="other-projects">Other Projects</h2>
+        <div class="my-3 bg-white shadow-sm rounded-xl p-4">
+            <ul class="mb-0">
+                {% for item in site.data.academia.code_projects %}
+                <li><a href="{{ item.url }}" target="_blank">{{ item.name }}</a> ({{ item.note }})</li>
+                {% endfor %}
+            </ul>
+        </div>
 
-        <section class="academic-section publications-section">
-            <h2>Publications</h2>
-            <p>My research publications from Google Scholar, automatically updated weekly.</p>
-            
-            <!-- PUBLICATIONS_START -->
-    <!-- Last updated: 2026-01-06 15:34:08 -->
-    <div class="publications-list">
-        <div class="publication-item">
-            <h3><a href="https://dl.acm.org/doi/abs/10.1145/3715336.3735805" target="_blank">Co-Designing with Transformers: Unpacking the Complex Role of GenAI in Interactive System Design Education</a></h3>
-            <p class="authors">Hauke Sandhaus and Qiuquan Gu and Maria Teresa Parreira and Wendy Ju</p>
-            <p class="venue-info">2025 • <span class="citations">4 citations</span></p>
-        </div>
-        <div class="publication-item">
-            <h3><a href="https://ieeexplore.ieee.org/abstract/document/10974098/" target="_blank">“I'm Done”: Describing Human Reactions to Successive Robot Failure</a></h3>
-            <p class="authors">Shannon Liu and Maria Teresa Parreira and Wendy Ju</p>
-            <p class="venue-info">2025 • <span class="citations">4 citations</span></p>
-        </div>
-        <div class="publication-item">
-            <h3><a href="https://dl.acm.org/doi/abs/10.1145/3706598.3714009" target="_blank">The Robotability Score: Enabling Harmonious Robot Navigation on Urban Streets</a></h3>
-            <p class="authors">Matthew Franchi and Maria Teresa Parreira and Fanjun Bu and Wendy Ju</p>
-            <p class="venue-info">2025 • <span class="citations">3 citations</span></p>
-        </div>
-        <div class="publication-item">
-            <h3><a href="https://dl.acm.org/doi/abs/10.1145/3746027.3762073" target="_blank">Err@ hri 2.0 challenge: Multimodal detection of errors and failures in human-robot conversations</a></h3>
-            <p class="authors">Shiye Cao and Maia Stiber and Amama Mahmood and Maria Teresa Parreira and Wendy Ju and Micol Spitale and Hatice Gunes and Chien-Ming Huang</p>
-            <p class="venue-info">2025 • <span class="citations">2 citations</span></p>
-        </div>
-        <div class="publication-item">
-            <h3><a href="https://ieeexplore.ieee.org/abstract/document/10974249/" target="_blank">Sustainability-4-HRI, HRI-4-Sustainability</a></h3>
-            <p class="authors">Ilaria Torre and Sarah Schömbs and Katie Winkle and Sara Ljungblad and Erik Lagerstedt and Maria Teresa Parreira and Hannah Pelikan</p>
-            <p class="venue-info">2025 • <span class="citations">1 citations</span></p>
-        </div>
-        <div class="publication-item">
-            <h3><a href="https://arxiv.org/abs/2512.00262" target="_blank">" Why the face?": Exploring Robot Error Detection Using Instrumented Bystander Reactions</a></h3>
-            <p class="authors">Maria Teresa Parreira and Ruidong Zhang and Sukruth Gowdru Lingaraju and Alexandra Bremers and Xuanyu Fang and Adolfo Ramirez-Aristizabal and Manaswi Saha and Michael Kuniavsky and Cheng Zhang and Wendy Ju</p>
-            <p class="venue-info">arXiv preprint arXiv:2512.00262, 2025</p>
-        </div>
-        <div class="publication-item">
-            <h3><a href="https://arxiv.org/abs/2510.09080" target="_blank">Training Models to Detect Successive Robot Errors from Human Reactions</a></h3>
-            <p class="authors">Shannon Liu and Maria Teresa Parreira and Wendy Ju</p>
-            <p class="venue-info">arXiv preprint arXiv:2510.09080, 2025</p>
-        </div>
-        <div class="publication-item">
-            <h3><a href="https://link.springer.com/chapter/10.1007/978-981-95-2398-6_33" target="_blank">Sustainable Human-Robot Interaction: From Current Trends to Future Visions</a></h3>
-            <p class="authors">Ilaria Torre and Maria Teresa Parreira and Hannah Pelikan and Erik Lagerstedt and Sarah Schömbs and Katie Winkle and Sara Ljungblad</p>
-            <p class="venue-info">2025</p>
-        </div>
-        <div class="publication-item">
-            <h3><a href="https://arxiv.org/abs/2405.01467" target="_blank">Student reflections on self-initiated GenAI use in HCI education</a></h3>
-            <p class="authors">Hauke Sandhaus and Maria Teresa Parreira and Wendy Ju</p>
-            <p class="venue-info">arXiv preprint arXiv:2405.01467, 2024 • <span class="citations">14 citations</span></p>
-        </div>
-        <div class="publication-item">
-            <h3><a href="https://dl.acm.org/doi/abs/10.1145/3678957.3689030" target="_blank">Err@ hri 2024 challenge: Multimodal detection of errors and failures in human-robot interactions</a></h3>
-            <p class="authors">Micol Spitale and Maria Teresa Parreira and Maia Stiber and Minja Axelsson and Neval Kara and Garima Kankariya and Chien-Ming Huang and Malte Jung and Wendy Ju and Hatice Gunes</p>
-            <p class="venue-info">2024 • <span class="citations">10 citations</span></p>
+        <h2 class="pt-5" id="press">Press</h2>
+        <div class="my-3 bg-white shadow-sm rounded-xl p-4">
+            <ul class="list-unstyled mb-0">
+                {% for item in site.data.academia.press %}
+                <li class="mb-2"><span class="text-muted mr-2">{{ item.date }}</span> {{ item.text }}</li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
-    <!-- PUBLICATIONS_END -->
 
-        <section class="section">
-            <h2>Work/Research Experience</h2>
-            <p> Aug/2022-now, Cornell University: PhD Candidate, Information Science, Advisors: Profs. Malte Jung, Wendy Ju</p>
-            <p> May/2025-Aug/2025, Google DeepMind: PhD Student Researcher, Affective Computing team. Large scale multi-agent simulations of conversational repair.</p>
-            <p> June/2021-July/2022, KTH Royal Institute of Technology: Research Engineer at Robotics,Perception and Learning Department (Prof. Iolanda Leite)</p>
-            <p> April/2020-Jan/2020, Institute for Systems and Robotics (Lisboa, Portugal) and Carnegie Mellon University: Research Scholar (Profs. João Sanches and Kris Dahl)</p>
-            <p> Mar/2019 - Jul/2019, Institute for Systems and Robotics (Lisboa, Portugal): Research Intern, ML for segmentation of MRI images in cases of MS</p>
-            <p> Dec/2017 - Feb/2018, Institute for Systems and Robotics (Lisboa, Portugal): Research Intern, development of grasping motion for the Vizzy robot </p>
-        </section>
-
-
-        <section class="section">
-            <h2>Education</h2>
-            <h3>2015-2020, Instituto Superior Técnico (Lisbon, Portugal)</h3>
-            <p>Integrated Master's in Biomedical Engineering</p>
-            <p>Magna cum laude (19/20),Master Thesis Dissertation in collaboration with Carnegie Mellon University (Pittsburgh, USA) evaluated at 20/20</p>
-            <h3>Fall 2018, Tsinghua University (Beijing, China)</h3>
-            <p>Computer Science</p>
-            <p>Exchange Program</p>
-        </section>
-
-
-    
-        <section class="section">
-            <h2>Education</h2>
-            <h3>Cornell University</h3>
-            <p>PhD Candidate</p>
-            <p>Add additional education details here...</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Maria Teresa Parreira. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+    <div class="col-2 d-none d-lg-block">
+        <div id="navbar-academia" class="nav nav-pills flex-column sticky-top small" style="top: 80px">
+            <a class="nav-link d-block" href="#publications">Publications</a>
+            <a class="nav-link d-block" href="#experience">Experience</a>
+            <a class="nav-link d-block" href="#talks">Talks</a>
+            <a class="nav-link d-block" href="#reviews">Reviews</a>
+            <a class="nav-link d-block" href="#other-projects">Other Projects</a>
+            <a class="nav-link d-block" href="#press">Press</a>
+        </div>
+    </div>
+</div>

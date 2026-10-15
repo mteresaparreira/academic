@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="row">
+    <div class="col-12 col-lg-10 mx-auto">
+        {% if page.banner %}
+        <div class="mt-4 rounded-xl shadow-sm" style="height: 220px; background: url('{{ page.banner | relative_url }}') center / cover;"></div>
+        {% endif %}
+        <h1 class="pt-4">{{ page.heading | default: page.title }}</h1>
+        <div class="my-3 bg-white shadow-sm rounded-xl p-4 page-content">
+            {{ content }}
+        </div>
+    </div>
+</div>
