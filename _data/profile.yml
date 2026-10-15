@@ -34,47 +34,64 @@ short_bio: >-
 portrait_url: /docs/profile.jpg
 
 education:
-- name: Cornell University
+- name: Cornell University (New York City, NY, USA)
   logo: /assets/images/badges/cornell.png
   position: >-
-    PhD, Information Science <br/>
-    Advisors: Profs. Malte Jung, Wendy Ju
+    PhD in Information Science (minor in Computer Science) <br/>
+    Advisors: Prof. Wendy Ju, Prof. Malte Jung <br/>
+    Human-robot interaction, Deep Learning, Affective Computing
   date: Aug. 2022 - present
 - name: Instituto Superior Técnico (Lisboa, Portugal)
   position: >-
-    Integrated MSc in Biomedical Engineering <br/>
-    Magna cum laude (19/20). Master Thesis Dissertation in collaboration with
-    Carnegie Mellon University (Pittsburgh, USA), evaluated at 20/20
-  date: 2015 - 2020
+    Integrated MSc in Biomedical Engineering, Magna cum laude (19/20) <br/>
+    Thesis "Describing monolayer mechanoresponse from nuclear morphology and dynamics: a computational approach",
+    with Prof. João Sanches (IST) and Prof. Kris Dahl (CMU, USA). Graded 20/20
+  date: Sep. 2015 - Jan. 2021
 - name: Tsinghua University (Beijing, China)
   logo: /assets/images/badges/tsinghua.png
-  position: Exchange semester, Computer Science Department
-  date: 2018
+  position: Exchange Program, Computer Science Department
+  date: Sep. 2018 - Feb. 2019
 
 experience:
+- name: Google DeepMind (New York, USA)
+  position: >-
+    PhD Student Researcher <br/>
+    Large-scale multi-agent simulation for conversational repair
+  date: Jun. 2025 - Aug. 2025
 - name: KTH Royal Institute of Technology (Stockholm, Sweden)
-  position: Research Engineer, Robotics, Perception and Learning Department
+  position: >-
+    Research Engineer, Division of Robotics, Perception and Learning (Prof. Iolanda Leite) <br/>
+    Offline RL for robot social behavior; frustration detection through thermal imaging;
+    listener behavior generation; gender-biased AI
   date: Jun. 2021 - Jul. 2022
 - name: Institute for Systems and Robotics (Lisboa, Portugal)
   logo: /assets/images/badges/cmu.png
   position: >-
-    Scholar, in collaboration with Dahl's Lab at Carnegie Mellon University (USA)
-  date: Jan. 2020 - Apr. 2020
+    Research Intern, with Profs. João Sanches (IST) and Kris Dahl (CMU, USA) <br/>
+    Computational analysis of microscopy images for cell mechanobiology
+  date: Oct. 2019 - Apr. 2020
 - name: Institute for Systems and Robotics (Lisboa, Portugal)
   position: >-
-    Internship: a machine learning approach to segmentation of MRI images in cases of MS
+    Research Intern: machine learning for segmentation of MRI images in cases of MS
   date: Mar. 2019 - Jul. 2019
 - name: Institute for Systems and Robotics (Lisboa, Portugal)
-  position: "Internship: development of grasping motion for the Vizzy robot"
-  date: Dec. 2017 - Feb. 2018
+  position: >-
+    Research Intern, with Prof. Plínio Moreno: grasping motions for the Vizzy robot
+  date: Jan. 2017 - Jun. 2017
 - name: Faculty of Medicine, University of Lisbon (Portugal)
   position: Teaching Assistant in Histology
   date: Sep. 2016 - Feb. 2017
 
 awards:
+- name: NVIDIA Academic Grant
+  date: 2025
+- name: HRI Pioneers, Honorable Mention (HRI 2025)
+  date: 2025
 - name: >-
     <a href="https://tecnico.ulisboa.pt/en/news/campus-community/tecnico-alumni-win-the-ieee-outstanding-msc-thesis-award/" target="_blank">IEEE Portugal's Outstanding MSc Thesis Award</a>
   date: 2022
 - name: >-
-    <a href="https://tecnico.ulisboa.pt/en/events/maria-de-lourdes-pintasilgo-award-ceremony-5th-edition-2020/" target="_blank">Maria de Lourdes Pintasilgo Award</a>
+    <a href="https://tecnico.ulisboa.pt/en/events/maria-de-lourdes-pintasilgo-award-ceremony-5th-edition-2020/" target="_blank">Maria de Lourdes Pintasilgo Award</a> for best alumna, IST
   date: 2021
+- name: Academic Merit / Excellence awards, IST
+  date: 2015-2020

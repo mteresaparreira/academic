@@ -14,7 +14,7 @@ Live at: https://mteresaparreira.github.io/academic/
 | Publications (one file each) | `_publications/<year>/*.md` |
 | News on the home page (one file each) | `_news/*.md` |
 | Which home-page sections are shown | `_data/display.yml` |
-| Talks, reviews & committees, code projects, press | `_data/academia.yml` |
+| Teaching, organizing committees, talks, reviews, code projects, press (Academia page) | `_data/academia.yml` |
 | "Log of interesting challenges" | `_data/challenges.yml` |
 | Bora / Reboot / Published Thoughts | `other-projects/*.md` |
 | CV PDF and profile photo | `docs/cv.pdf`, `docs/profile.jpg` |

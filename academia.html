@@ -13,6 +13,10 @@ body_attr: >-
     <div class="col-12 col-lg-10">
 
         <h1 class="pt-4">Education, Research, Press</h1>
+        <p class="lead mt-3">
+            I investigate how humans and AI systems communicate and repair interaction breakdowns, combining multimodal
+            machine learning with human&#8209;in&#8209;the&#8209;loop methods to improve social competence in human&#8209;AI interaction.
+        </p>
 
         <h2 class="pt-4" id="publications">Publications</h2>
         {% for year in pubs_by_year %}
@@ -27,6 +31,24 @@ body_attr: >-
         <h2 class="pt-5" id="experience">Work/Research Experience &amp; Education</h2>
         {% include widgets/experience_card.html %}
 
+        <h2 class="pt-5" id="teaching">Teaching</h2>
+        <div class="my-3 bg-white shadow-sm rounded-xl p-4">
+            <ul class="list-unstyled mb-0">
+                {% for item in site.data.academia.teaching %}
+                <li class="mb-2"><span class="text-muted mr-2">{{ item.date }}</span> {{ item.text }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <h2 class="pt-5" id="committees">Organizing Committees</h2>
+        <div class="my-3 bg-white shadow-sm rounded-xl p-4">
+            <ul class="list-unstyled mb-0">
+                {% for item in site.data.academia.committees %}
+                <li class="mb-2"><span class="text-muted mr-2">{{ item.date }}</span> {{ item.text }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
         <h2 class="pt-5" id="talks">Visits/Talks/Summer Schools</h2>
         <div class="my-3 bg-white shadow-sm rounded-xl p-4">
             <ul class="list-unstyled mb-0">
@@ -36,7 +58,7 @@ body_attr: >-
             </ul>
         </div>
 
-        <h2 class="pt-5" id="reviews">Reviews and Committees</h2>
+        <h2 class="pt-5" id="reviews">Reviews</h2>
         <div class="my-3 bg-white shadow-sm rounded-xl p-4">
             <ul class="mb-0">
                 {% for item in site.data.academia.reviews %}
@@ -68,6 +90,8 @@ body_attr: >-
         <div id="navbar-academia" class="nav nav-pills flex-column sticky-top small" style="top: 80px">
             <a class="nav-link d-block" href="#publications">Publications</a>
             <a class="nav-link d-block" href="#experience">Experience</a>
+            <a class="nav-link d-block" href="#teaching">Teaching</a>
+            <a class="nav-link d-block" href="#committees">Committees</a>
             <a class="nav-link d-block" href="#talks">Talks</a>
             <a class="nav-link d-block" href="#reviews">Reviews</a>
             <a class="nav-link d-block" href="#other-projects">Other Projects</a>

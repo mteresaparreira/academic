@@ -18,19 +18,45 @@ talks:
   text: >-
     Attended <a href="https://www.summer-school.rpl.eecs.kth.se/" target="_blank">RPL Summer School</a> (Stockholm)
 
+teaching:
+- date: Fall 2025
+  text: Applied Machine Learning
+- date: Spring 2025
+  text: Tech, Media and Democracy
+- date: Spring 2024
+  text: Remaking the City
+- date: Fall 2023
+  text: Interactive Device Design
+
+committees:
+- date: Mar 2026
+  text: Sustainability Chair, HRI 2026
+- date: Jul 2025
+  text: Models of Human Feedback for AI Alignment workshop, ICML 2025
+- date: Jun 2025
+  text: ERR@HRI 2.0 Challenge, ACM MM 2025
+- date: Mar 2025
+  text: HRI-4-Sustainability, Sustainability-4-HRI workshop, HRI 2025
+- date: Nov 2024
+  text: ERR@HRI Challenge, ICMI 2024
+- date: 2023 - 2026
+  text: >-
+    PACT committee (PhDs At Cornell Tech): Co-president (1/2023-1/2024), Social Chair (1/2024-1/2026)
+- date: Oct 2023
+  text: Lead organizer, IS Retreat at Cornell University
+
 reviews:
 - IEEE International Conference on Robotics & Automation (ICRA), 2026
 - Advanced Robotics, 2026
-- ACM CHI conference on Human Factors in Computing Systems, 2026
+- ACM CHI Conference on Human Factors in Computing Systems, 2025-26
 - IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025
-- ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2023-26
+- ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2022-26
 - Late-Breaking Reports, ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2022-25
-- Transactions on Human-Robot Interaction (THRI) 2024-25
-- International Conference on Social Robotics (ICSR) 2024
-- "01/2023 - now - PACT committee (PhDs At Cornell Tech): Co-president (1/2023-1/2024), Social Chair (1/2024-1/2026)"
-- 10/2023 - Organizing committee for the IS Retreat
+- ACM Transactions on Human-Robot Interaction (THRI), 2024-25
+- ACM Designing Interactive Systems (DIS), 2024
+- International Conference on Social Robotics (ICSR), 2024
 - Cognitive Systems Research, 2023
-- International Journal of Social Robotics, 2022-23
+- International Journal of Social Robotics, 2022-25
 
 code_projects:
 - name: DFL - Bundesliga Data Shootout
