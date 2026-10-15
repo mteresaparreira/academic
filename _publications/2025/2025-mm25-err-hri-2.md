@@ -18,4 +18,6 @@ authors:
   - Micol Spitale
   - Hatice Gunes
   - Chien-Ming Huang
+links:
+  Paper: https://doi.org/10.1145/3746027.3762073
 ---

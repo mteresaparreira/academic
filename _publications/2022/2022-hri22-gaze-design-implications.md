@@ -15,5 +15,5 @@ authors:
   - Marynel Vázquez
   - Iolanda Leite
 links:
-  Paper: https://dl.acm.org/doi/10.5555/3523760.3523918
+  Paper: https://doi.org/10.1109/HRI53351.2022.9889481
 ---

@@ -15,4 +15,6 @@ authors:
   - Maria Teresa Parreira
   - Séverin Lemaignan
   - Iolanda Leite
+links:
+  Paper: https://doi.org/10.1109/HRI53351.2022.9889545
 ---

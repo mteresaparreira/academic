@@ -15,5 +15,6 @@ authors:
   - Fanjun Bu
   - Wendy Ju
 links:
+  Paper: https://doi.org/10.1145/3706598.3714009
   Press: https://news.cornell.edu/stories/2025/04/robotability-score-ranks-nyc-streets-future-robot-deployment
 ---

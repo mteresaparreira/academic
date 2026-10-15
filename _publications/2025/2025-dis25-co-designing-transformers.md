@@ -1,5 +1,5 @@
 ---
-title:          'Co-designing with Transformers: Unpacking the Complex Role of GenAI in Interactive System Design Education'
+title:          'Co-Designing with Transformers: Unpacking the Complex Role of GenAI in Interactive System Design Education'
 date:           2025-07-05 00:01:00 -0500
 selected:       false
 pub:            'Proceedings of the 2025 ACM Designing Interactive Systems Conference (DIS)'
@@ -15,5 +15,6 @@ authors:
   - Maria Teresa Parreira
   - Wendy Ju
 links:
+  Paper: https://doi.org/10.1145/3715336.3735805
   arXiv (preprint): https://arxiv.org/abs/2410.14048
 ---

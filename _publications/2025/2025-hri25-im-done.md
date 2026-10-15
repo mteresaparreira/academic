@@ -13,4 +13,6 @@ authors:
   - Shannon Liu
   - Maria Teresa Parreira
   - Wendy Ju
+links:
+  Paper: https://doi.org/10.1109/HRI61500.2025.10974098
 ---

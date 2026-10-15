@@ -20,5 +20,6 @@ authors:
   - Michael Kuniavsky
   - Wendy Ju
 links:
-  arXiv: https://doi.org/10.48550/arXiv.2303.04835
+  Paper: https://doi.org/10.1109/IROS55552.2023.10342442
+  arXiv: https://arxiv.org/abs/2303.04835
 ---

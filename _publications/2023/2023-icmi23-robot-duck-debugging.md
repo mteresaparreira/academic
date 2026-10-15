@@ -13,4 +13,6 @@ authors:
   - Maria Teresa Parreira
   - Sarah Gillet
   - Iolanda Leite
+links:
+  Paper: https://doi.org/10.1145/3577190.3614160
 ---

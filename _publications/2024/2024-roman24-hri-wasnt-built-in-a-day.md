@@ -16,4 +16,6 @@ authors:
   - Elmira Yadollahi
   - Iolanda Leite
   - Hatice Gunes
+links:
+  Paper: https://doi.org/10.1109/RO-MAN60168.2024.10731210
 ---

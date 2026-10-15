@@ -15,5 +15,6 @@ authors:
   - João M. Sanches
   - Kris Noel Dahl
 links:
+  Paper: https://doi.org/10.1002/cm.21660
   Press: https://www.cheme.engineering.cmu.edu/news/2021/06/24-dahl-stiffened-cells.html
 ---

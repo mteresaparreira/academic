@@ -2,7 +2,8 @@
 title:          'What Predicts Interpersonal Affect? Preliminary Analyses from Retrospective Evaluations'
 date:           2023-08-28 00:01:00 -0500
 selected:       true
-pub:            'Proceedings of the 2023 IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)'
+pub:            '2023 32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)'
+pub_post:       ' (Late-Breaking Report)'
 pub_date:       "2023"
 # abstract:     >-
 #   One or two sentences shown under the title.
@@ -13,5 +14,5 @@ authors:
   - Michael J. Sack
   - Malte Jung
 links:
-  Preprint: https://drive.google.com/file/d/1zLM9aBT7J5Z-SYjhCZkMd78JHzXzLTPK/view?usp=sharing
+  arXiv: https://arxiv.org/abs/2311.09378
 ---
