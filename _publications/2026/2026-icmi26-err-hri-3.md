@@ -1,7 +1,7 @@
 ---
 title:          'ERR@HRI 3.0 Challenge: Multimodal Detection of Errors and Anticipation in Human-Robot Interactions'
 date:           2026-10-05 00:01:00 -0500
-selected:       false
+selected:       true
 pub:            'Proceedings of the 28th International Conference on Multimodal Interaction (ICMI ''26), Napoli, Italy'
 pub_post:       ', pp. 1381–1385'
 pub_date:       "2026"

@@ -1,7 +1,7 @@
 ---
 title:          'Design Implications for Effective Robot Gaze Behaviors in Multiparty Interactions'
 date:           2022-03-09 00:01:00 -0500
-selected:       true
+selected:       false
 pub:            '2022 17th ACM/IEEE International Conference on Human-Robot Interaction (HRI)'
 pub_post:       ', pp. 976–980'
 pub_date:       "2022"

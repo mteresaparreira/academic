@@ -55,7 +55,12 @@ education:
 experience:
 - name: Google DeepMind (New York, USA)
   position: >-
-    PhD Student Researcher <br/>
+    PhD Student Researcher, Affective Computing team <br/>
+    Framework for evaluation of interaction friction and agentic adaptation in user-agent interactions
+  date: May 2026 - Aug. 2026
+- name: Google DeepMind (New York, USA)
+  position: >-
+    PhD Student Researcher, Affective Computing team <br/>
     Large-scale multi-agent simulation for conversational repair
   date: Jun. 2025 - Aug. 2025
 - name: KTH Royal Institute of Technology (Stockholm, Sweden)

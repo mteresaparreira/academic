@@ -1,7 +1,7 @@
 ---
 title:          'The Robotability Score: Enabling Harmonious Robot Navigation on Urban Streets'
 date:           2025-04-26 00:01:00 -0500
-selected:       false
+selected:       true
 pub:            'Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems'
 pub_post:       ', pp. 1–17'
 pub_date:       "2025"

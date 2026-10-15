@@ -1,7 +1,7 @@
 ---
 title:          '"Why the face?": Exploring Robot Error Detection Using Instrumented Bystander Reactions'
 date:           2025-11-29 00:01:00 -0500
-selected:       false
+selected:       true
 pub:            'arXiv preprint arXiv:2512.00262'
 pub_date:       "2025"
 # abstract:     >-

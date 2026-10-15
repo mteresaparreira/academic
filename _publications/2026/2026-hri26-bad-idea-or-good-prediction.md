@@ -1,7 +1,7 @@
 ---
 title:          'Bad Idea or Good Prediction? Comparing VLM and Human Anticipatory Judgment'
 date:           2026-03-17 00:01:00 -0500
-selected:       false
+selected:       true
 pub:            'Companion Proceedings of the 21st ACM/IEEE International Conference on Human-Robot Interaction (HRI ''26), Edinburgh'
 pub_post:       ', pp. 933–937'
 pub_date:       "2026"

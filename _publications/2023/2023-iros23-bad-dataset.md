@@ -1,7 +1,7 @@
 ---
 title:          'The Bystander Affect Detection (BAD) Dataset for Failure Detection in HRI'
 date:           2023-10-01 00:01:00 -0500
-selected:       false
+selected:       true
 pub:            '2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)'
 pub_post:       ', pp. 11443–11450'
 pub_date:       "2023"
