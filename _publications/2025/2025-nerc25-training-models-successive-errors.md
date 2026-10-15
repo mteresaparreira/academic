@@ -14,4 +14,5 @@ authors:
   - Wendy Ju
 links:
   arXiv: https://arxiv.org/abs/2510.09080
+  Code: https://github.com/IRL-CT/badrobotsIRL
 ---

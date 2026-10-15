@@ -19,4 +19,5 @@ authors:
 links:
   Paper: https://doi.org/10.1145/3848624
   arXiv: https://arxiv.org/abs/2309.01822
+  Code & Data: https://github.com/becbot/CRI_Replication
 ---

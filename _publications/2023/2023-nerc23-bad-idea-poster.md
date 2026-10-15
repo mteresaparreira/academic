@@ -19,4 +19,5 @@ authors:
   - Wendy Ju
 links:
   Poster: https://drive.google.com/file/d/1VwWyYsHhdF7fE23Ms1UdiMrdEor_vVPq/view?usp=sharing
+  Project: https://irl.tech.cornell.edu/badidea/
 ---

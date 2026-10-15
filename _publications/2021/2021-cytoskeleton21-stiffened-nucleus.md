@@ -17,4 +17,7 @@ authors:
 links:
   Paper: https://doi.org/10.1002/cm.21660
   Press: https://www.cheme.engineering.cmu.edu/news/2021/06/24-dahl-stiffened-cells.html
+  PubMed: https://pubmed.ncbi.nlm.nih.gov/33837677/
+  Code: https://github.com/mteresaparreira/dynamic-feature-analysis-complete
+  MSc Thesis: https://fenix.tecnico.ulisboa.pt/downloadFile/1689244997262470/Thesis_MTeresaParreira_83844.pdf
 ---

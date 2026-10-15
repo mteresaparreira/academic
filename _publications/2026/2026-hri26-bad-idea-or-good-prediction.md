@@ -16,4 +16,7 @@ authors:
   - Wendy Ju
 links:
   Paper: https://doi.org/10.1145/3776734.3794531
+  PDF: https://irl.tech.cornell.edu/vlms-x-badidea/static/images/main_lbr.pdf
+  Project: https://irl.tech.cornell.edu/vlms-x-badidea/
+  Code: https://github.com/IRL-CT/vlms-x-badidea
 ---

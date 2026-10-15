@@ -17,4 +17,5 @@ authors:
   - Iolanda Leite
 links:
   Paper: https://doi.org/10.1109/HRI53351.2022.9889545
+  PDF: https://academia.skadge.org/publis/mohamed2022automatic.pdf
 ---

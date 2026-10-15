@@ -15,4 +15,5 @@ authors:
   - Wendy Ju
 links:
   arXiv: https://arxiv.org/abs/2405.01467
+  Workshop: https://sites.google.com/view/llmsindatawork/
 ---

@@ -15,4 +15,5 @@ authors:
   - Wendy Ju
 links:
   arXiv: https://arxiv.org/abs/2606.14054
+  Code & Data: https://github.com/IRL-CT/idd-x-ai
 ---

@@ -21,4 +21,7 @@ authors:
   - Wendy Ju
 links:
   arXiv: https://arxiv.org/abs/2512.00262
+  Project: http://irl.tech.cornell.edu/badrobots-feat-neckface/
+  Code: https://github.com/IRL-CT/badrobots-feat-neckface
+  Supplementary: http://irl.tech.cornell.edu/badrobots-feat-neckface/images/supp_material.pdf
 ---

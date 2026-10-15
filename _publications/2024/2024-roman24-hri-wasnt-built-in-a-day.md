@@ -18,4 +18,7 @@ authors:
   - Hatice Gunes
 links:
   Paper: https://doi.org/10.1109/RO-MAN60168.2024.10731210
+  PDF: https://www.repository.cam.ac.uk/handle/1810/369482
+  Project: https://responsiblehri.github.io/
+  Data: https://github.com/ElmiraYadollahi/ResponsibleHRI
 ---

@@ -2,7 +2,7 @@
 title:          'What Could a Social Mediator Robot Do? Lessons from Real-World Mediation Scenarios'
 date:           2023-06-01 00:01:00 -0500
 selected:       false
-pub:            'arXiv preprint arXiv:2306.17379'
+pub:            '2023 IEEE ICRA Workshop: Towards a Balanced Cyberphysical Society: A Focus on Group Social Dynamics, London'
 pub_date:       "2023"
 # abstract:     >-
 #   One or two sentences shown under the title.
@@ -18,4 +18,5 @@ authors:
   - Nawid Jamali
 links:
   arXiv: https://arxiv.org/abs/2306.17379
+  Workshop: https://mypersonalrobots.org/events/2023/6/2/icra-2023-workshop-towards-a-balanced-cyberphysical-society-a-focus-on-group-social-dynamics
 ---

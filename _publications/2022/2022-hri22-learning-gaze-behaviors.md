@@ -16,4 +16,6 @@ authors:
   - Iolanda Leite
 links:
   Paper: https://doi.org/10.1109/HRI53351.2022.9889416
+  PDF: https://sarahgillet.com/assets/pdf/Gillet_LearningGroupInteraction_hri22_accepted.pdf
+  Video: https://youtu.be/hYp97SwvxKc
 ---

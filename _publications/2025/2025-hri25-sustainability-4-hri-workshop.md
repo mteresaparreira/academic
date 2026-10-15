@@ -19,4 +19,6 @@ authors:
   - Hannah R. M. Pelikan
 links:
   Paper: https://doi.org/10.1109/HRI61500.2025.10974249
+  PDF: https://liu.diva-portal.org/smash/get/diva2:1951752/FULLTEXT01
+  Workshop: https://sites.google.com/view/hri-4-sustainability/
 ---

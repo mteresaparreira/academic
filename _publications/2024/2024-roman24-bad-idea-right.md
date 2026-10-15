@@ -19,4 +19,7 @@ authors:
 links:
   Paper: https://doi.org/10.1109/RO-MAN60168.2024.10731310
   PDF: https://drive.google.com/file/d/13gLKTMjmbDkGP453ZfBxicFZ4YmBvYRp/view
+  Project: https://irl.tech.cornell.edu/badidea/
+  Code: https://github.com/IRL-CT/badidea
+  Supplementary: https://irl.tech.cornell.edu/badidea/submission/ROMAN2024_BADIdea_supp.pdf
 ---

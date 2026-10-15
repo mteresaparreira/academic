@@ -15,4 +15,6 @@ authors:
   - Wendy Ju
 links:
   arXiv: https://arxiv.org/abs/2601.00754
+  Project: https://irl-ct.github.io/calling-for-backup/
+  Code: https://github.com/IRL-CT/calling-for-backup
 ---

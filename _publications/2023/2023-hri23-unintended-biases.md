@@ -15,5 +15,7 @@ authors:
   - Katie Winkle
   - Iolanda Leite
 links:
-  DOI: https://doi.org/10.1145/3568294.3580032
+  Paper: https://doi.org/10.1145/3568294.3580032
+  PDF: https://dl.acm.org/doi/pdf/10.1145/3568294.3580032
+  Code & Data: https://github.com/mteresaparreira/gender-biased-robot-duck
 ---

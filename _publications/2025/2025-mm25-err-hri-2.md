@@ -20,4 +20,8 @@ authors:
   - Chien-Ming Huang
 links:
   Paper: https://doi.org/10.1145/3746027.3762073
+  arXiv: https://arxiv.org/abs/2507.13468
+  PDF: https://www.repository.cam.ac.uk/handle/1810/393345
+  Website: https://sites.google.com/view/errhri20/home
+  Code: https://github.com/ERR-HRI-Challenge/baseline2025
 ---

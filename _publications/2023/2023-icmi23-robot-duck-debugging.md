@@ -15,4 +15,6 @@ authors:
   - Iolanda Leite
 links:
   Paper: https://doi.org/10.1145/3577190.3614160
+  arXiv: https://arxiv.org/abs/2301.06511
+  PDF: https://dl.acm.org/doi/pdf/10.1145/3577190.3614160
 ---

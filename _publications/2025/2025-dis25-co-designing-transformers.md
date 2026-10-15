@@ -17,4 +17,6 @@ authors:
 links:
   Paper: https://doi.org/10.1145/3715336.3735805
   arXiv (preprint): https://arxiv.org/abs/2410.14048
+  Supplementary (OSF): https://osf.io/wt742/
+  Code: https://github.com/IRL-CT/idd-x-ai
 ---

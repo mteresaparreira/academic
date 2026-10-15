@@ -19,4 +19,7 @@ authors:
 links:
   Paper: https://doi.org/10.1109/ACII59096.2023.10388122
   arXiv: https://arxiv.org/abs/2306.16629
+  Website: https://www.corae.org/
+  Code: https://github.com/mjsack/CORAE
+  Data: https://github.com/mteresaparreira/CORAE_validation
 ---

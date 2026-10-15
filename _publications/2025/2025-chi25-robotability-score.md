@@ -17,4 +17,8 @@ authors:
 links:
   Paper: https://doi.org/10.1145/3706598.3714009
   Press: https://news.cornell.edu/stories/2025/04/robotability-score-ranks-nyc-streets-future-robot-deployment
+  arXiv: https://arxiv.org/abs/2504.11163
+  Project: https://robotability.cornell.edu/
+  Code: https://github.com/FAR-LAB/robotability-nyc
+  Video: https://www.youtube.com/watch?v=o52MZ1AHyjA
 ---

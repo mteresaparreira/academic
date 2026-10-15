@@ -23,4 +23,6 @@ authors:
   - Samantha Stedtler
 links:
   Paper: https://doi.org/10.1145/3776734.3793850
+  PDF: https://research.chalmers.se/publication/551928/file/551928_Fulltext.pdf
+  Workshop: https://sites.google.com/view/roots-hri-2026/
 ---

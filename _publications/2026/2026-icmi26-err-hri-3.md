@@ -21,4 +21,6 @@ authors:
 links:
   Paper: https://doi.org/10.1145/3776574.3833403
   arXiv: https://arxiv.org/abs/2607.11570
+  Website: https://sites.google.com/view/errhri30/
+  Code: https://github.com/IRL-CT/errhri-3-0
 ---

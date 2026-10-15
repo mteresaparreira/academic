@@ -17,4 +17,5 @@ authors:
   - Wendy Ju
 links:
   arXiv: https://arxiv.org/abs/2403.06315
+  Code: https://github.com/mteresaparreira/baddata
 ---

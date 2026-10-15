@@ -15,4 +15,5 @@ authors:
   - Wendy Ju
 links:
   Paper: https://doi.org/10.1109/HRI61500.2025.10974098
+  Code & Data: https://github.com/IRL-CT/badrobotsIRL
 ---
