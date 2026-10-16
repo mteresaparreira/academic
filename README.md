@@ -33,7 +33,7 @@ The home page (`index.html`) keeps all the template's sections. Each one is fill
 | --- | --- | --- |
 | **Profile card** (left column: photo, name, positions, email, icons) | `_data/profile.yml` | `portrait_url` is the photo; `positions` are the lines under the name; `email`, `gscholar`, `github`, `linkedin`, `twitter`, `orcid` add the icons (comment a line out with `#` to remove its icon). |
 | **About Me** (bio + quote + CV link) | `short_bio` and `cv_link` in `_data/profile.yml` | `short_bio` is HTML: use `<p>...</p>` for paragraphs and `<a href="...">` for links. |
-| **Education / Experience / Honors & Awards** | `education`, `experience`, `awards` in `_data/profile.yml` | Each entry has `name`, `position`, `date` and an optional `logo` (image path, e.g. `/assets/images/badges/cornell.png`). Without a logo, a small icon is shown. Delete a whole list to hide that column. |
+| **Education / Experience / Honors & Awards** | `education`, `experience`, `awards` in `_data/profile.yml` | Each entry has `name`, `position`, `date` and an optional `logo` (image in `assets/images/badges/`, about 128×128 px). Without a logo, a small icon is shown. Add `show_on_home: false` to an experience entry to list it only on the Academia page. Delete a whole list to hide that column. |
 | **News** | one file per item in `_news/` | Copy an existing file, change `title` (HTML allowed) and `date`. Newest first; only the month is shown. `num_news` in `_data/display.yml` sets how many appear. |
 | **Selected Publications** | files in `_publications/` with `selected: true` | See [Highlighting publications](#highlighting-publications). |
 

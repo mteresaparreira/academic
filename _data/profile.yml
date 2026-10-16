@@ -18,13 +18,13 @@ linkedin: mariateresaparreira
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    By leveraging machine learning and human&#8209;in&#8209;the&#8209;loop sensing, I want to build tools that make sense
-    of social environments, for more robust, adaptable, and socially competent artificial agents.
+    I study how robots can understand and act within human social environments, 
+    combining machine learning with behavioral and in-the-wild studies 
+    to build agents that are socially competent in practice, not only by design.
   </p>
   <p>
     See my publications, press and academic training on <a href="academia/">Academia</a>.
     Get familiar with other projects of mine over <a href="other-projects/">Other Projects</a>.
-    My CV is (surprise) on <a href="cv/">CV</a>.
   </p>
   <blockquote class="blockquote mb-0 mt-4">
     <p class="mb-0"><em>&ldquo;Understanding our sociality is critical to understanding our humanity&rdquo;</em></p>
@@ -42,6 +42,7 @@ education:
     Human-robot interaction, Deep Learning, Affective Computing
   date: Aug. 2022 - present
 - name: Instituto Superior Técnico (Lisboa, Portugal)
+  logo: /assets/images/badges/ist.png
   position: >-
     Integrated MSc in Biomedical Engineering, Magna cum laude (19/20) <br/>
     Thesis "Describing monolayer mechanoresponse from nuclear morphology and dynamics: a computational approach",
@@ -52,18 +53,22 @@ education:
   position: Exchange Program, Computer Science Department
   date: Sep. 2018 - Feb. 2019
 
+# Entries with `show_on_home: false` are listed on the Academia page only, not on the home page.
 experience:
 - name: Google DeepMind (New York, USA)
+  logo: /assets/images/badges/deepmind.png
   position: >-
     PhD Student Researcher, Affective Computing team <br/>
     Framework for evaluation of interaction friction and agentic adaptation in user-agent interactions
   date: May 2026 - Aug. 2026
 - name: Google DeepMind (New York, USA)
+  logo: /assets/images/badges/deepmind.png
   position: >-
     PhD Student Researcher, Affective Computing team <br/>
     Large-scale multi-agent simulation for conversational repair
   date: Jun. 2025 - Aug. 2025
 - name: KTH Royal Institute of Technology (Stockholm, Sweden)
+  logo: /assets/images/badges/kth.png
   position: >-
     Research Engineer, Division of Robotics, Perception and Learning (Prof. Iolanda Leite) <br/>
     Offline RL for robot social behavior; frustration detection through thermal imaging;
@@ -76,14 +81,19 @@ experience:
     Computational analysis of microscopy images for cell mechanobiology
   date: Oct. 2019 - Apr. 2020
 - name: Institute for Systems and Robotics (Lisboa, Portugal)
+  logo: /assets/images/badges/ist.png
+  show_on_home: false
   position: >-
     Research Intern: machine learning for segmentation of MRI images in cases of MS
   date: Mar. 2019 - Jul. 2019
 - name: Institute for Systems and Robotics (Lisboa, Portugal)
+  logo: /assets/images/badges/ist.png
+  show_on_home: false
   position: >-
     Research Intern, with Prof. Plínio Moreno: grasping motions for the Vizzy robot
   date: Jan. 2017 - Jun. 2017
 - name: Faculty of Medicine, University of Lisbon (Portugal)
+  show_on_home: false
   position: Teaching Assistant in Histology
   date: Sep. 2016 - Feb. 2017
 
